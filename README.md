@@ -7,6 +7,20 @@
 - Used to style it and lay it out.
 - For example, you can use CSS to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
 
+---
+
+## How does CSS actually work?
+
+- When a browser displays a document, it must combine the document's content with its style information. It processes the document in two stages:
+
+  - The browser converts HTML and CSS into the DOM (Document Object Model).
+  - The DOM represents the document in the computer's memory. It combines the document's content with its style.
+  - The browser displays the contents of the DOM.
+
+<img src="https://mdn.mozillademos.org/files/11781/rendering.svg" width="450px">
+
+---
+
 ## How to apply CSS to HTML?
 
 - There are three different ways to apply CSS to an HTML document
@@ -98,3 +112,5 @@ p {
 
   - Please don't do this, unless you really have to! It is really bad for maintenance.
   - makes more harder to read and understand.
+
+---
