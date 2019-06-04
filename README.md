@@ -134,3 +134,40 @@ body {
   font-family: Arial;
 }
 ```
+
+## CSS Syntax
+
+- CSS consists of two building blocks:
+
+  - **Properties:** Human-readable identifiers that indicate which stylistic features (e.g., font, width, background color) you want to change.
+  - **Values:** Each specified property is given a value, which indicates how you want to change those stylistic features (e.g., what you want to change the font, width, or background color to.)
+
+**CSS Declarations**
+
+<img src="https://mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png">
+
+```css
+h1 {
+  background-color: red;
+}
+```
+
+**CSS declaration blocks**
+
+<img src="https://mdn.mozillademos.org/files/3667/css%20syntax%20-%20declarations%20block.png">
+
+```css
+h1 {
+  color: blue;
+  background-color: yellow;
+}
+
+p {
+  color: red;
+}
+
+p,
+li {
+  text-decoration: underline;
+}
+```
