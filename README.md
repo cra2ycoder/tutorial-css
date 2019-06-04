@@ -114,3 +114,9 @@ p {
   - makes more harder to read and understand.
 
 ---
+
+## How to write comments in CSS?
+
+- to help you understand how your code works when coming back to it after several months
+- to help others understand it.
+- Comments are also useful for temporarily commenting out certain parts of the code for testing purposes, for example if you are trying to find which part of your code is causing an error.
