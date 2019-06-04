@@ -113,6 +113,13 @@ p {
   - Please don't do this, unless you really have to! It is really bad for maintenance.
   - makes more harder to read and understand.
 
+- **CSS Affects on the Ordering**
+
+  - Priority 0: INLINE
+  - Priority 1: INTERNAL
+  - Priority 2: EXTERNAL
+  - NOTE: this priority may change when we using `!important`
+
 ---
 
 ## How to write comments in CSS?
