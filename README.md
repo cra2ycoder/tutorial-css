@@ -135,6 +135,8 @@ body {
 }
 ```
 
+---
+
 ## CSS Syntax
 
 - CSS consists of two building blocks:
@@ -167,6 +169,8 @@ li {
   text-decoration: underline;
 }
 ```
+
+---
 
 ## CSS Selectors
 
