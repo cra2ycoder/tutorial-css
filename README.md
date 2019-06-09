@@ -167,3 +167,7 @@ li {
   text-decoration: underline;
 }
 ```
+
+## CSS Selectors
+
+- Different types of selectors
