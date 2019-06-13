@@ -18,24 +18,24 @@
     </style>
   </head>
   <body>
-    <h1>Type selectors aka element selectors</h1>
+    <h1>Universal Selectors</h1>
     <section>
       <h2>Preview:</h2>
       <section>
         <style>
-          /* All p elements are red */
-          p {
-            color: red;
-          }
-
-          /* All div elements are blue */
-          div {
-            color: blue;
+          .universal-selectors * {
+            padding: 5px;
+            border: 1px solid black;
+            background: rgba(255, 0, 0, 0.25);
           }
         </style>
-        <p>What color do you like?</p>
-        <div>I like blue.</div>
-        <p>I prefer BLACK!</p>
+        <div class="universal-selectors">
+          <p>
+            I think the containing box just needed a <strong>border</strong> or
+            <em>something</em>, but this is getting
+            <strong>out of hand</strong>!
+          </p>
+        </div>
       </section>
       <hr />
       <section>
@@ -43,9 +43,13 @@
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
               <code class="language-markup" >
-                  &lt;p>What color do you like?&lt;/p>
-                  &lt;div>I like blue.&lt;/div>
-                  &lt;p>I prefer BLACK!&lt;/p>
+                &lt;div class="universal-selectors">
+                    &lt;p>
+                        I think the containing box just needed a &lt;strong>border&lt;/strong> or
+                        &lt;em>something&lt;/em>, but this is getting
+                        &lt;strong>out of hand&lt;/strong>!
+                    &lt;/p>
+                &lt;/div>
               </code>
           </pre>
         </section>
@@ -54,15 +58,11 @@
           <h2>CSS:</h2>
           <pre class="line-numbers">
               <code class="language-css" >
-                  /* All p elements are red */
-                  p {
-                    color: red;
-                  }
-
-                  /* All div elements are blue */
-                  div {
-                    color: blue;
-                  }
+                .universal-selectors * {
+                    padding: 5px;
+                    border: 1px solid black;
+                    background: rgba(255, 0, 0, 0.25);
+                }
               </code>
             </pre>
         </section>
