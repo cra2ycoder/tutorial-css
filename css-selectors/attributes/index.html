@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="../prism/prism.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 1rem;
+        font-family: "Roboto";
+      }
+      pre.line-numbers {
+        padding: 1rem 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Presence and value attribute selectors</h1>
+    <section>
+      <h2>Preview:</h2>
+      <section>
+        <style>
+          /* All elements with the attribute "car" */
+          .presence-value-attr [car] {
+            background-color: green;
+            color: white;
+          }
+
+          /* All elements with the attribute "car"
+            with the exact value "audi" */
+          .presence-value-attr [car="bmw"] {
+            background-color: goldenrod;
+          }
+
+          /* All elements with the attribute "car",
+            containing the value "audi", even among others,
+            are given a red text color */
+          .presence-value-attr [car~="audi"] {
+            color: red;
+          }
+        </style>
+        <ul class="presence-value-attr">
+          <li car></li>
+          <li car="audi">Audi</li>
+          <li car="bmw">BMW</li>
+          <li car="this is audi">Audi A5</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+              <code class="language-markup" >
+                &lt;ul class="presence-value-attr">
+                    &lt;li car>&lt;/li>
+                    &lt;li car="audi">Audi&lt;/li>
+                    &lt;li car="bmw">BMW&lt;/li>
+                    &lt;li car="this is audi">Audi A5&lt;/li>
+                &lt;/ul>
+              </code>
+          </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+              <code class="language-css" >
+                /* All elements with the attribute "car" */
+                .presence-value-attr [car] {
+                    background-color: green;
+                    color: white;
+                }
+
+                /* All elements with the attribute "car"
+                    with the exact value "audi" */
+                .presence-value-attr [car="bmw"] {
+                    background-color: goldenrod;
+                }
+
+                /* All elements with the attribute "car",
+                    containing the value "audi", even among others,
+                    are given a red text color */
+                .presence-value-attr [car~="audi"] {
+                    color: red;
+                }
+              </code>
+            </pre>
+        </section>
+      </section>
+    </section>
+    <hr />
+    <script src="../prism/prism.js" type="text/javascript"></script>
+  </body>
+</html>
