@@ -1,6 +1,6 @@
-## Attributes
+# Attributes
 
-**Presence and value attribute selectors**
+## Presence and value attribute selectors
 
 - **[attr]:** This selector will select all elements with the attribute attr, whatever its value.
 - **[attr=val]:** This selector will select all elements with the attribute attr, but only if its value is val.
@@ -35,3 +35,10 @@ are given a red text color */
   color: red;
 }
 ```
+
+---
+
+## Substring value attribute selectors
+
+- also known as `RegExp-like selectors`
+- flexible matching in a similar fashion to regular expression (these are not true regular expression)
