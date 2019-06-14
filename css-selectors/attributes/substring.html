@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Selectors</title>
-    <link rel="stylesheet" href="../prism/prism.css" />
+    <link rel="stylesheet" href="../../prism/prism.css" />
     <style>
       body {
         margin: 0;
@@ -23,9 +23,37 @@
       <h2>Preview:</h2>
       <section>
         <style>
-          /* write necessary css here */
+          li[data-type^="vegetable"] {
+            background-color: red;
+            color: white;
+          }
+
+          li[data-type$="kg"] {
+            font-size: 2rem;
+            color: green;
+          }
+
+          li[data-type*="table"] {
+            font-size: 3rem;
+            color: blue;
+          }
+
+          li[data-type|="vegetable-cucumber"] {
+            font-size: 3rem;
+            color: yellow;
+          }
         </style>
-        <!-- where elements needs to be added -->
+        <ul>
+          <li data-type="vegetable tomato">Tomato</li>
+          <li data-type="carrot 3kg">Carrot</li>
+          <li data-type="vegetable beans 2kg">Beans</li>
+          <li data-type="corn 1kg">Corn</li>
+          <li data-type="vegetable red chilly">
+            Red Chilly
+          </li>
+          <li data-type="vegetable-cucumber">Cucumber</li>
+          <li data-type="vegetable-garlic">Garlic</li>
+        </ul>
       </section>
       <hr />
       <section>
@@ -33,7 +61,17 @@
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
               <code class="language-markup" >
-                 <!-- where elements needs to be added for code editor preview -->
+                &lt;ul>
+                  &lt;li data-type="vegetable tomato">Tomato&lt;/li>
+                  &lt;li data-type="carrot 3kg">Carrot&lt;/li>
+                  &lt;li data-type="vegetable beans 2kg">Beans&lt;/li>
+                  &lt;li data-type="corn 1kg">Corn&lt;/li>
+                  &lt;li data-type="vegetable red chilly">
+                    Red Chilly
+                  &lt;/li>
+                  &lt;li data-type="vegetable-cucumber">Cucumber&lt;/li>
+                  &lt;li data-type="vegetable-garlic">Garlic&lt;/li>
+                &lt;/ul>
               </code>
           </pre>
         </section>
@@ -42,12 +80,34 @@
           <h2>CSS:</h2>
           <pre class="line-numbers">
               <code class="language-css" >
-                  /* write necessary css here for code editor preview */
+                /* selects the element which data-type value starts with "vegetable" */
+                li[data-type^="vegetable"] {
+                  background-color: red;
+                  color: white;
+                }
+      
+                /* selects the element which  data-type value ends with "kg" */
+                li[data-type$="kg"] {
+                  font-size: 2rem;
+                  color: green;
+                }
+      
+                /* selects the element which data-type value substrings of "table" */
+                li[data-type*="table"] {
+                  font-size: 3rem;
+                  color: blue;
+                }
+      
+                /* selects the element which data-type value exactly same as "vegetable-cucumber" */
+                li[data-type|="vegetable-cucumber"] {
+                  font-size: 3rem;
+                  color: yellow;
+                }
               </code>
             </pre>
         </section>
       </section>
     </section>
-    <script src="../prism/prism.js" type="text/javascript"></script>
+    <script src="../../prism/prism.js" type="text/javascript"></script>
   </body>
 </html>
