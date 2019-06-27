@@ -24,14 +24,14 @@
 
 /* All elements with the attribute "car"
 with the exact value "audi" */
-.presence-value-attr [car="bmw"] {
+.presence-value-attr [car='bmw'] {
   background-color: goldenrod;
 }
 
 /* All elements with the attribute "car",
 containing the value "audi", even among others,
 are given a red text color */
-.presence-value-attr [car~="audi"] {
+.presence-value-attr [car~='audi'] {
   color: red;
 }
 ```
@@ -64,25 +64,25 @@ are given a red text color */
 
 ```css
 /* selects the element which data-type value starts with "vegetable" */
-li[data-type^="vegetable"] {
+li[data-type^='vegetable'] {
   background-color: red;
   color: white;
 }
 
 /* selects the element which  data-type value ends with "kg" */
-li[data-type$="kg"] {
+li[data-type$='kg'] {
   font-size: 2rem;
   color: green;
 }
 
 /* selects the element which data-type value substrings of "table" */
-li[data-type*="table"] {
+li[data-type*='table'] {
   font-size: 3rem;
   color: blue;
 }
 
 /* selects the element which data-type value exactly same as "vegetable-cucumber" */
-li[data-type|="vegetable-cucumber"] {
+li[data-type|='vegetable-cucumber'] {
   font-size: 3rem;
   color: yellow;
 }
