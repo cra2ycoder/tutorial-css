@@ -19,13 +19,30 @@
   </head>
   <body>
     <h1>Combinators and Selectors List</h1>
+    <h2>Preview:</h2>
     <section>
-      <h2>Preview:</h2>
       <section>
         <style>
-          /* write necessary css here */
+          .button-a,
+          .button-b,
+          .button-c,
+          .button-d {
+            width: 200px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            line-height: 40px;
+          }
         </style>
-        <!-- where elements needs to be added -->
+        <h3>Selector list (A, B)</h3>
+        <div class="button-a">Button A</div>
+        <br />
+        <div class="button-b">Button B</div>
+        <br />
+        <div class="button-c">Button C</div>
+        <br />
+        <div class="button-d">Button D</div>
       </section>
       <hr />
       <section>
@@ -33,7 +50,10 @@
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
               <code class="language-markup" >
-                 <!-- where elements needs to be added for code editor preview -->
+                &lt;div class="button-a">Button A&lt;/div>
+                &lt;div class="button-b">Button B&lt;/div>
+                &lt;div class="button-c">Button C&lt;/div>
+                &lt;div class="button-d">Button D&lt;/div>
               </code>
           </pre>
         </section>
@@ -42,9 +62,68 @@
           <h2>CSS:</h2>
           <pre class="line-numbers">
               <code class="language-css" >
-                  /* write necessary css here for code editor preview */
+                .button-a,
+                .button-b,
+                .button-c,
+                .button-d {
+                  width: 200px;
+                  height: 40px;
+                  color: white;
+                  background-color: black;
+                  text-align: center;
+                  line-height: 40px;
+                }
               </code>
             </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
+          .fruits .pineapple span {
+            color: red;
+            text-decoration: underline;
+            font-size: 2rem;
+          }
+        </style>
+        <h3>Descendant combinator (A B)</h3>
+        <ul class="fruits">
+          <li class="apple">apple</li>
+          <li class="orange">orange</li>
+          <li class="pineapple">
+            <span>pineapple</span>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                <code class="language-markup" >
+                    &lt;ul class="fruits">
+                        &lt;li class="apple">apple&lt;/li>
+                        &lt;li class="orange">orange&lt;/li>
+                        &lt;li class="pineapple">
+                            &lt;span>pineapple&lt;/span>
+                        &lt;/li>
+                    &lt;/ul>
+                </code>
+            </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                <code class="language-css" >
+                    .fruits .pineapple span {
+                        color: red;
+                        text-decoration: underline;
+                        font-size: 2rem;
+                    }
+                </code>
+              </pre>
         </section>
       </section>
     </section>
