@@ -200,6 +200,69 @@
         </section>
       </section>
     </section>
+    <section>
+      <section>
+        <style>
+          .child-a,
+          .child-b,
+          .child-c {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            line-height: 50px;
+          }
+          .adjacent-sibling .child-a:hover + .child-b {
+            background-color: green;
+          }
+        </style>
+        <h3>Adjacent sibling (A + B)</h3>
+        <div class="adjacent-sibling">
+          <div class="child-a">A</div>
+          <div class="child-b">B</div>
+          <div class="child-c">C</div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                <code class="language-markup" >
+                    &lt;div class="adjacent-sibling">
+                        &lt;div class="child-a">A&lt;/div>
+                        &lt;div class="child-b">B&lt;/div>
+                        &lt;div class="child-c">C&lt;/div>
+                    &lt;/div>
+                </code>
+          </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                <code class="language-css" >
+                    .child-a,
+                    .child-b,
+                    .child-c {
+                        width: 50px;
+                        height: 50px;
+                        background-color: red;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: white;
+                        line-height: 50px;
+                    }
+                    .adjacent-sibling .child-a:hover + .child-b {
+                        background-color: green;
+                    }
+                </code>
+          </pre>
+        </section>
+      </section>
+    </section>
     <script src="../../prism/prism.js" type="text/javascript"></script>
   </body>
 </html>
