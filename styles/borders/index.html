@@ -42,13 +42,89 @@
             border-top-color: red;
             border-bottom-color: red;
           }
-
+        </style>
+        <h4>Border Default:</h4>
+        <div class="border-default"></div>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+              <code class="language-markup" >
+                &lt;div class="border-default">&lt;/div>
+              </code>
+          </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+              <code class="language-css" >
+                .border-default {
+                  width: 100px;
+                  height: 100px;
+      
+                  border-left-style: solid;
+                  border-right-style: solid;
+                  border-top-style: solid;
+                  border-bottom-style: solid;
+      
+                  border-left-width: 1px;
+                  border-right-width: 1px;
+                  border-top-width: 1px;
+                  border-bottom-width: 1px;
+      
+                  border-left-color: red;
+                  border-right-color: red;
+                  border-top-color: red;
+                  border-bottom-color: red;
+                }
+              </code>
+            </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
           .border-group {
             width: 100px;
             height: 100px;
             border: 1px solid green;
           }
-
+        </style>
+        <h4>Border Group:</h4>
+        <div class="border-group"></div>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                <code class="language-markup" >
+                  &lt;div class="border-group">&lt;/div>
+                </code>
+            </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                <code class="language-css" >
+                  .border-group {
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid green;
+                  }
+                </code>
+              </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
           .border-styles {
             display: flex;
           }
@@ -95,12 +171,6 @@
             border-style: outset;
           }
         </style>
-        <h4>Border Default:</h4>
-        <div class="border-default"></div>
-        <br />
-        <h4>Border Group:</h4>
-        <div class="border-group"></div>
-        <br />
         <h4>Border Styles:</h4>
         <section class="border-styles">
           <div class="solid">solid</div>
@@ -112,26 +182,78 @@
           <div class="inset">inset</div>
           <div class="outset">outset</div>
         </section>
-        <br />
       </section>
       <hr />
       <section>
         <section>
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
-              <code class="language-markup" >
-                 <!-- where elements needs to be added for code editor preview -->
-              </code>
-          </pre>
+                <code class="language-markup" >
+                  &lt;section class="border-styles">
+                    &lt;div class="solid">solid&lt;/div>
+                    &lt;div class="dashed">dashed&lt;/div>
+                    &lt;div class="dotted">dotted&lt;/div>
+                    &lt;div class="double">double&lt;/div>
+                    &lt;div class="groove">groove&lt;/div>
+                    &lt;div class="ridge">ridge&lt;/div>
+                    &lt;div class="inset">inset&lt;/div>
+                    &lt;div class="outset">outset&lt;/div>
+                  &lt;/section>
+                </code>
+            </pre>
         </section>
         <hr />
         <section>
           <h2>CSS:</h2>
           <pre class="line-numbers">
-              <code class="language-css" >
-                  /* write necessary css here for code editor preview */
-              </code>
-            </pre>
+                <code class="language-css" >
+                  .border-styles {
+                    display: flex;
+                  }
+        
+                  .border-styles div {
+                    width: 100px;
+                    height: 100px;
+                    margin: 5px;
+                    border: 6px solid #9e9e9e;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+        
+                  .border-styles .solid {
+                    border-style: solid;
+                  }
+        
+                  .border-styles .dashed {
+                    border-style: dashed;
+                  }
+        
+                  .border-styles .dotted {
+                    border-style: dotted;
+                  }
+        
+                  .border-styles .double {
+                    border-style: double;
+                  }
+        
+                  .border-styles .groove {
+                    border-style: groove;
+                  }
+        
+                  .border-styles .ridge {
+                    border-style: ridge;
+                  }
+        
+                  .border-styles .inset {
+                    border-style: inset;
+                  }
+        
+                  .border-styles .outset {
+                    border-style: outset;
+                  }
+                </code>
+              </pre>
         </section>
       </section>
     </section>
