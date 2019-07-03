@@ -2,11 +2,11 @@
 
 **core properties:**
 
-- border-color
-- border-image
-- border-radius
-- border-style
-- border-width
+- [x] border-color
+- [ ] border-image
+- [x] border-radius
+- [x] border-style
+- [ ] border-width
 
 **border bottom properties:**
 

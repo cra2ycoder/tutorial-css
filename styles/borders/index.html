@@ -127,6 +127,7 @@
         <style>
           .border-styles {
             display: flex;
+            flex-wrap: wrap;
           }
 
           .border-styles div {
@@ -170,6 +171,22 @@
           .border-styles .outset {
             border-style: outset;
           }
+
+          .border-styles .top-style {
+            border-top-style: dashed;
+          }
+
+          .border-styles .right-style {
+            border-right-style: dotted;
+          }
+
+          .border-styles .bottom-style {
+            border-bottom-style: double;
+          }
+
+          .border-styles .left-style {
+            border-left-style: groove;
+          }
         </style>
         <h4>Border Styles:</h4>
         <section class="border-styles">
@@ -181,6 +198,10 @@
           <div class="ridge">ridge</div>
           <div class="inset">inset</div>
           <div class="outset">outset</div>
+          <div class="top-style">top-style</div>
+          <div class="right-style">right-style</div>
+          <div class="bottom-style">bottom-style</div>
+          <div class="left-style">left-style</div>
         </section>
       </section>
       <hr />
@@ -198,6 +219,10 @@
                     &lt;div class="ridge">ridge&lt;/div>
                     &lt;div class="inset">inset&lt;/div>
                     &lt;div class="outset">outset&lt;/div>
+                    &lt;div class="top-style">top-style&lt;/div>
+                    &lt;div class="right-style">right-style&lt;/div>
+                    &lt;div class="bottom-style">bottom-style&lt;/div>
+                    &lt;div class="left-style">left-style&lt;/div>
                   &lt;/section>
                 </code>
             </pre>
@@ -252,47 +277,22 @@
                   .border-styles .outset {
                     border-style: outset;
                   }
-                </code>
-              </pre>
-        </section>
-      </section>
-    </section>
-    <section>
-      <section>
-        <style>
-          .border-radius-group {
-            width: 100px;
-            height: 100px;
-            border: 3px solid purple;
-            border-radius: 10px;
-          }
-        </style>
-        <h3>Border Radius:</h3>
-        <h4>Default:</h4>
-        <div class="border-radius-group"></div>
-        <br />
-      </section>
-      <hr />
-      <section>
-        <section>
-          <h2>HTML:</h2>
-          <pre class="line-numbers language-html">
-                <code class="language-markup" >
-                    &lt;div class="border-radius-group">&lt;/div>
-                </code>
-            </pre>
-        </section>
-        <hr />
-        <section>
-          <h2>CSS:</h2>
-          <pre class="line-numbers">
-                <code class="language-css" >
-                    .border-radius-group {
-                      width: 100px;
-                      height: 100px;
-                      border: 3px solid purple;
-                      border-radius: 10px;
-                    }
+                  
+                  .border-styles .top-style {
+                    border-top-style: dashed;
+                  }
+        
+                  .border-styles .right-style {
+                    border-right-style: dotted;
+                  }
+        
+                  .border-styles .bottom-style {
+                    border-bottom-style: double;
+                  }
+        
+                  .border-styles .left-style {
+                    border-left-style: groove;
+                  }
                 </code>
               </pre>
         </section>
@@ -316,6 +316,10 @@
             margin: 5px;
           }
 
+          .border-size.all {
+            border-radius: 20px;
+          }
+
           .border-size.border-tlr {
             border-color: red;
             border-top-left-radius: 30px;
@@ -336,8 +340,9 @@
             border-bottom-right-radius: 30px;
           }
         </style>
-        <h4>Types of Radius:</h4>
+        <h3>Border Radius:</h3>
         <section class="border-radius-list">
+          <div class="border-size all">all</div>
           <div class="border-size border-tlr">top left</div>
           <div class="border-size border-trr">top right</div>
           <div class="border-size border-blr">bottom left</div>
@@ -352,6 +357,7 @@
           <pre class="line-numbers language-html">
                   <code class="language-markup" >
                       &lt;section class="border-radius-list">
+                          &lt;div class="border-size all">all&lt;/div>
                           &lt;div class="border-size border-tlr">top left&lt;/div>
                           &lt;div class="border-size border-trr">top right&lt;/div>
                           &lt;div class="border-size border-blr">bottom left&lt;/div>
@@ -379,6 +385,10 @@
                         justify-content: center;
                         margin: 5px;
                       }
+
+                      .border-size.all {
+                        border-radius: 20px;
+                      }
             
                       .border-size.border-tlr {
                         border-color: red;
@@ -398,6 +408,111 @@
                       .border-size.border-brr {
                         border-color: violet;
                         border-bottom-right-radius: 30px;
+                      }
+                  </code>
+                </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
+          .border-colors-list {
+            display: flex;
+          }
+
+          .border-colors-list div {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid #ccc;
+            margin: 5px;
+          }
+
+          .border-colors-list .all {
+            border-color: red;
+          }
+
+          .border-colors-list .top-color {
+            border-top-color: red;
+          }
+
+          .border-colors-list .right-color {
+            border-right-color: red;
+          }
+
+          .border-colors-list .bottom-color {
+            border-bottom-color: red;
+          }
+
+          .border-colors-list .left-color {
+            border-left-color: red;
+          }
+        </style>
+        <h3>Border Colors</h3>
+        <section class="border-colors-list">
+          <div class="all">all</div>
+          <div class="top-color">top color</div>
+          <div class="right-color">right color</div>
+          <div class="bottom-color">bottom color</div>
+          <div class="left-color">left color</div>
+        </section>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                  <code class="language-markup" >
+                      &lt;section class="border-colors-list">
+                          &lt;div class="all">all&lt;/div>
+                          &lt;div class="top-color">top color&lt;/div>
+                          &lt;div class="right-color">right color&lt;/div>
+                          &lt;div class="bottom-color">bottom color&lt;/div>
+                          &lt;div class="left-color">left color&lt;/div>
+                      &lt;/section>
+                  </code>
+              </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                  <code class="language-css" >
+                      .border-colors-list {
+                        display: flex;
+                      }
+            
+                      .border-colors-list div {
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: solid #ccc;
+                        margin: 5px;
+                      }
+
+                      .border-colors-list .all {
+                        border-color: red;
+                      }
+            
+                      .border-colors-list .top-color {
+                        border-top-color: red;
+                      }
+            
+                      .border-colors-list .right-color {
+                        border-right-color: red;
+                      }
+            
+                      .border-colors-list .bottom-color {
+                        border-bottom-color: red;
+                      }
+            
+                      .border-colors-list .left-color {
+                        border-left-color: red;
                       }
                   </code>
                 </pre>
