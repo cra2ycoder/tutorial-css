@@ -257,6 +257,153 @@
         </section>
       </section>
     </section>
+    <section>
+      <section>
+        <style>
+          .border-radius-group {
+            width: 100px;
+            height: 100px;
+            border: 3px solid purple;
+            border-radius: 10px;
+          }
+        </style>
+        <h3>Border Radius:</h3>
+        <h4>Default:</h4>
+        <div class="border-radius-group"></div>
+        <br />
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                <code class="language-markup" >
+                    &lt;div class="border-radius-group">&lt;/div>
+                </code>
+            </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                <code class="language-css" >
+                    .border-radius-group {
+                      width: 100px;
+                      height: 100px;
+                      border: 3px solid purple;
+                      border-radius: 10px;
+                    }
+                </code>
+              </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
+          .border-radius-list {
+            display: flex;
+          }
+
+          .border-size {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            border-radius: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+          }
+
+          .border-size.border-tlr {
+            border-color: red;
+            border-top-left-radius: 30px;
+          }
+
+          .border-size.border-trr {
+            border-color: green;
+            border-top-right-radius: 30px;
+          }
+
+          .border-size.border-blr {
+            border-color: blue;
+            border-bottom-left-radius: 30px;
+          }
+
+          .border-size.border-brr {
+            border-color: violet;
+            border-bottom-right-radius: 30px;
+          }
+        </style>
+        <h4>Types of Radius:</h4>
+        <section class="border-radius-list">
+          <div class="border-size border-tlr">top left</div>
+          <div class="border-size border-trr">top right</div>
+          <div class="border-size border-blr">bottom left</div>
+          <div class="border-size border-brr">bottom right</div>
+        </section>
+        <br />
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                  <code class="language-markup" >
+                      &lt;section class="border-radius-list">
+                          &lt;div class="border-size border-tlr">top left&lt;/div>
+                          &lt;div class="border-size border-trr">top right&lt;/div>
+                          &lt;div class="border-size border-blr">bottom left&lt;/div>
+                          &lt;div class="border-size border-brr">bottom right&lt;/div>
+                      &lt;/section>
+                  </code>
+              </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                  <code class="language-css" >
+                      .border-radius-list {
+                        display: flex;
+                      }
+            
+                      .border-size {
+                        width: 100px;
+                        height: 100px;
+                        border: 2px solid;
+                        border-radius: unset;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 5px;
+                      }
+            
+                      .border-size.border-tlr {
+                        border-color: red;
+                        border-top-left-radius: 30px;
+                      }
+            
+                      .border-size.border-trr {
+                        border-color: green;
+                        border-top-right-radius: 30px;
+                      }
+            
+                      .border-size.border-blr {
+                        border-color: blue;
+                        border-bottom-left-radius: 30px;
+                      }
+            
+                      .border-size.border-brr {
+                        border-color: violet;
+                        border-bottom-right-radius: 30px;
+                      }
+                  </code>
+                </pre>
+        </section>
+      </section>
+    </section>
     <script src="../../prism/prism.js" type="text/javascript"></script>
   </body>
 </html>
