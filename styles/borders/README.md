@@ -6,7 +6,7 @@
 - [ ] border-image
 - [x] border-radius
 - [x] border-style
-- [ ] border-width
+- [x] border-width
 
 **border bottom properties:**
 
