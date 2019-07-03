@@ -277,7 +277,7 @@
                   .border-styles .outset {
                     border-style: outset;
                   }
-                  
+
                   .border-styles .top-style {
                     border-top-style: dashed;
                   }
@@ -513,6 +513,111 @@
             
                       .border-colors-list .left-color {
                         border-left-color: red;
+                      }
+                  </code>
+                </pre>
+        </section>
+      </section>
+    </section>
+    <section>
+      <section>
+        <style>
+          .border-width-list {
+            display: flex;
+          }
+
+          .bs {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid;
+            margin: 5px;
+          }
+
+          .bs.all {
+            border-width: 10px;
+          }
+
+          .bs.top-width {
+            border-top-width: 10px;
+          }
+
+          .bs.right-width {
+            border-right-width: 10px;
+          }
+
+          .bs.bottom-width {
+            border-bottom-width: 10px;
+          }
+
+          .bs.left-width {
+            border-left-width: 10px;
+          }
+        </style>
+        <h3>Border Width</h3>
+        <section class="border-width-list">
+          <div class="bs all">all</div>
+          <div class="bs top-width">top width</div>
+          <div class="bs right-width">right width</div>
+          <div class="bs bottom-width">bottom width</div>
+          <div class="bs left-width">left width</div>
+        </section>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+                  <code class="language-markup" >
+                      &lt;section class="border-width-list">
+                          &lt;div class="bs all">all&lt;/div>
+                          &lt;div class="bs top-width">top width&lt;/div>
+                          &lt;div class="bs right-width">right width&lt;/div>
+                          &lt;div class="bs bottom-width">bottom width&lt;/div>
+                          &lt;div class="bs left-width">left width&lt;/div>
+                      &lt;/section>
+                  </code>
+              </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+                  <code class="language-css" >
+                      .border-width-list {
+                        display: flex;
+                      }
+            
+                      .bs {
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: solid;
+                        margin: 5px;
+                      }
+            
+                      .bs.all {
+                        border-width: 10px;
+                      }
+            
+                      .bs.top-width {
+                        border-top-width: 10px;
+                      }
+            
+                      .bs.right-width {
+                        border-right-width: 10px;
+                      }
+            
+                      .bs.bottom-width {
+                        border-bottom-width: 10px;
+                      }
+            
+                      .bs.left-width {
+                        border-left-width: 10px;
                       }
                   </code>
                 </pre>
