@@ -645,15 +645,41 @@
             border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png')
               20 22 round;
           }
+
+          .bimg.img-source {
+            border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+          }
+
+          .bimg.img-outlet {
+            border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+            border-image-outset: 10px;
+          }
+
+          .bimg.img-repeat {
+            border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+            border-image-slice: 20 22;
+            /* repeat will not working properly without slice property */
+            border-image-repeat: repeat;
+          }
+
+          .bimg.img-slice {
+            border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+            border-image-slice: 20 22;
+          }
+
+          .bimg.img-width {
+            border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+            border-image-width: 40px;
+          }
         </style>
         <h3>Border Image</h3>
         <section class="border-image-list">
-          <div class="bimg all"></div>
-          <div class="bimg img-source"></div>
-          <div class="bimg img-outlet"></div>
-          <div class="bimg img-repeat"></div>
-          <div class="bimg img-slice"></div>
-          <div class="bimg img-width"></div>
+          <div class="bimg all">all</div>
+          <div class="bimg img-source">image source</div>
+          <div class="bimg img-outlet">image outlet</div>
+          <div class="bimg img-repeat">image repeat</div>
+          <div class="bimg img-slice">image slice</div>
+          <div class="bimg img-width">image width</div>
         </section>
       </section>
       <hr />
@@ -662,7 +688,14 @@
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
               <code class="language-markup" >
-                <!-- where elements needs to be added for code editor preview -->
+                &lt;section class="border-image-list">
+                  &lt;div class="bimg all">all&lt;/div>
+                  &lt;div class="bimg img-source">image source&lt;/div>
+                  &lt;div class="bimg img-outlet">image outlet&lt;/div>
+                  &lt;div class="bimg img-repeat">image repeat&lt;/div>
+                  &lt;div class="bimg img-slice">image slice&lt;/div>
+                  &lt;div class="bimg img-width">image width&lt;/div>
+                &lt;/section>
               </code>
           </pre>
         </section>
@@ -671,7 +704,50 @@
           <h2>CSS:</h2>
           <pre class="line-numbers">
               <code class="language-css" >
-                /* write necessary css here for code editor preview */
+                .border-image-list {
+                  display: flex;
+                }
+      
+                .bimg {
+                  width: 200px;
+                  height: 100px;
+                  border: 20px solid;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 5px;
+                }
+      
+                .bimg.all {
+                  border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png')
+                    20 22 round;
+                }
+      
+                .bimg.img-source {
+                  border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+                }
+      
+                .bimg.img-outlet {
+                  border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+                  border-image-outset: 10px;
+                }
+      
+                .bimg.img-repeat {
+                  border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+                  border-image-slice: 20 22;
+                  /* repeat will not working properly without slice property */
+                  border-image-repeat: repeat;
+                }
+      
+                .bimg.img-slice {
+                  border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+                  border-image-slice: 20 22;
+                }
+      
+                .bimg.img-width {
+                  border-image-source: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png');
+                  border-image-width: 40px;
+                }
               </code>
           </pre>
         </section>

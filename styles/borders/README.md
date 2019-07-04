@@ -3,10 +3,28 @@
 **core properties:**
 
 - [x] border-color
-- [ ] border-image
+
+  - used to set border color
+
+- [x] border-image
+
+  - used to set border image
+
 - [x] border-radius
+
+  - used to set border radius
+
 - [x] border-style
+
+  - used to set border styles
+
 - [x] border-width
+
+  - used to set border width
+
+---
+
+## Group of properties which used to style the borders in different aspects
 
 **border bottom properties:**
 
@@ -50,3 +68,5 @@
 - border-top-right-radius
 - border-bottom-left-radius
 - border-bottom-right-radius
+
+---
