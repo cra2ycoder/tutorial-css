@@ -18,14 +18,34 @@
     </style>
   </head>
   <body>
-    <h1>Texts</h1>
+    <h1>Texts: Font Styles</h1>
+    <!-- color -->
     <section>
-      <h2>Preview:</h2>
       <section>
         <style>
-          /* write necessary css here */
+          .color.name {
+            color: red;
+          }
+
+          .color.hex {
+            color: #ff00ff;
+          }
+
+          .color.rgb {
+            color: rgb(13, 195, 38);
+          }
+
+          .color.rgba {
+            color: rgba(0, 0, 0, 0.4);
+          }
         </style>
-        <!-- where elements needs to be added -->
+        <h3>Colors:</h3>
+        <section class="font-styles">
+          <p class="color name">color: name</p>
+          <p class="color hex">color: hex</p>
+          <p class="color rgb">color: rgb</p>
+          <p class="color rgba">color: rgba</p>
+        </section>
       </section>
       <hr />
       <section>
@@ -33,7 +53,12 @@
           <h2>HTML:</h2>
           <pre class="line-numbers language-html">
               <code class="language-markup" >
-                 <!-- where elements needs to be added for code editor preview -->
+                  &lt;section class="font-styles">
+                    &lt;p class="color name">color: text&lt;/p>
+                    &lt;p class="color hex">color: hex&lt;/p>
+                    &lt;p class="color rgb">color: rgb&lt;/p>
+                    &lt;p class="color rgba">color: rgba&lt;/p>
+                  &lt;/section>
               </code>
           </pre>
         </section>
@@ -41,10 +66,204 @@
         <section>
           <h2>CSS:</h2>
           <pre class="line-numbers">
-              <code class="language-css" >
-                  /* write necessary css here for code editor preview */
+            <code class="language-css" >
+                .color.name {
+                  color: red;
+                }
+      
+                .color.hex {
+                  color: #ff00ff;
+                }
+      
+                .color.rgb {
+                  color: rgb(13, 195, 38);
+                }
+      
+                .color.rgba {
+                  color: rgba(0, 0, 0, 0.4);
+                }
+            </code>
+          </pre>
+        </section>
+      </section>
+    </section>
+
+    <!-- font-family -->
+    <section>
+      <section>
+        <style>
+          .font-family.default {
+            font-family: 'Times New Roman';
+          }
+
+          .font-family.custom {
+            font-family: 'Trebuchet MS';
+          }
+
+          .font-family.alternate {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        </style>
+        <h3>Font Family:</h3>
+        <p class="font-family default">font-family: default</p>
+        <p class="font-family custom">font-family: custom</p>
+        <p class="font-family alternate">font-family: alternate</p>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+              <code class="language-markup" >
+                  &lt;p class="font-family default">font-family: default&lt;/p>
+                  &lt;p class="font-family custom">font-family: custom&lt;/p>
+                  &lt;p class="font-family alternate">font-family: alternate&lt;/p>
               </code>
-            </pre>
+          </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+            <code class="language-css" >
+                .font-family.default {
+                  font-family: 'Times New Roman';
+                }
+      
+                .font-family.custom {
+                  font-family: 'Trebuchet MS';
+                }
+      
+                .font-family.alternate {
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+            </code>
+          </pre>
+        </section>
+      </section>
+    </section>
+
+    <!-- font-size -->
+    <section>
+      <section>
+        <style>
+          .font-size.xx-small {
+            font-size: xx-small;
+          }
+
+          .font-size.x-small {
+            font-size: x-small;
+          }
+
+          .font-size.small {
+            font-size: small;
+          }
+
+          .font-size.smaller {
+            font-size: smaller;
+          }
+
+          .font-size.medium {
+            font-size: medium;
+          }
+
+          .font-size.large {
+            font-size: large;
+          }
+
+          .font-size.larger {
+            font-size: larger;
+          }
+
+          .font-size.x-large {
+            font-size: x-large;
+          }
+
+          .font-size.xx-large {
+            font-size: xx-large;
+          }
+
+          .font-size.custom {
+            font-size: 40px;
+          }
+        </style>
+        <h3>Font Size:</h3>
+        <p class="font-size xx-small">font-size: xx-small</p>
+        <p class="font-size x-small">font-size: x-small</p>
+        <p class="font-size small">font-size: small</p>
+        <p class="font-size smaller">font-size: smaller</p>
+        <p class="font-size medium">font-size: medium</p>
+        <p class="font-size large">font-size: large</p>
+        <p class="font-size larger">font-size: larger</p>
+        <p class="font-size x-large">font-size: x-large</p>
+        <p class="font-size xx-large">font-size: xx-large</p>
+        <p class="font-size custom">font-size:custom</p>
+      </section>
+      <hr />
+      <section>
+        <section>
+          <h2>HTML:</h2>
+          <pre class="line-numbers language-html">
+              <code class="language-markup" >
+                  &lt;p class="font-size xx-small">font-size: xx-small&lt;/p>
+                  &lt;p class="font-size x-small">font-size: x-small&lt;/p>
+                  &lt;p class="font-size small">font-size: small&lt;/p>
+                  &lt;p class="font-size smaller">font-size: smaller&lt;/p>
+                  &lt;p class="font-size medium">font-size: medium&lt;/p>
+                  &lt;p class="font-size large">font-size: large&lt;/p>
+                  &lt;p class="font-size larger">font-size: larger&lt;/p>
+                  &lt;p class="font-size x-large">font-size: x-large&lt;/p>
+                  &lt;p class="font-size xx-large">font-size: xx-large&lt;/p>
+                  &lt;p class="font-size custom">font-size:custom&lt;/p>
+              </code>
+          </pre>
+        </section>
+        <hr />
+        <section>
+          <h2>CSS:</h2>
+          <pre class="line-numbers">
+            <code class="language-css" >
+                .font-size.xx-small {
+                  font-size: xx-small;
+                }
+      
+                .font-size.x-small {
+                  font-size: x-small;
+                }
+      
+                .font-size.small {
+                  font-size: small;
+                }
+      
+                .font-size.smaller {
+                  font-size: smaller;
+                }
+      
+                .font-size.medium {
+                  font-size: medium;
+                }
+      
+                .font-size.large {
+                  font-size: large;
+                }
+      
+                .font-size.larger {
+                  font-size: larger;
+                }
+      
+                .font-size.x-large {
+                  font-size: x-large;
+                }
+      
+                .font-size.xx-large {
+                  font-size: xx-large;
+                }
+                
+                .font-size.custom {
+                  font-size: 40px;
+                }
+            </code>
+          </pre>
         </section>
       </section>
     </section>
