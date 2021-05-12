@@ -1,0 +1,32 @@
+.sidebar,
+body {
+  color: #d6e0ea;
+  background-color: #020910;
+}
+
+.anchor span {
+  color: #05ad32;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section strong {
+  color: #ff982c;
+}
+
+.markdown-section hr {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.markdown-section pre,
+.markdown-section output {
+  border-radius: 4px;
+}
+
+.markdown-section code,
+.markdown-section pre {
+  background-color: #0c1019;
+  border: 1px solid #232323;
+}
