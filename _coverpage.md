@@ -48,4 +48,4 @@
 
 <!-- background color -->
 
-![color](#364149)
+![color](#f66)
