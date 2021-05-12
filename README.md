@@ -26,7 +26,7 @@
   - Internal
   - Inline
 
-**External**
+### External
 
 - An external stylesheet is when you have your CSS written in a separate file with a **.css** extension, and you reference it from an HTML **link** element.
 
@@ -57,7 +57,7 @@ p {
 }
 ```
 
-**Internal**
+### Internal
 
 - An internal stylesheet is where you don't have an external CSS file, but instead place your CSS inside a **style** element, contained inside the HTML head.
 
@@ -86,7 +86,7 @@ p {
 </html>
 ```
 
-**Inline**
+### Inline
 
 - Inline styles are CSS declarations that affect one element only, contained within a style attribute:
 
