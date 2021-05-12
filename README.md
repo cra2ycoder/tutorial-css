@@ -1,4 +1,4 @@
-# TUTORIALS 12
+# TUTORIALS
 
 ## What is CSS?
 
