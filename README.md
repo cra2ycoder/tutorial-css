@@ -1,5 +1,3 @@
-# tutorial-css
-
 ## What is CSS?
 
 - Expands **Cascading Stylesheets**
