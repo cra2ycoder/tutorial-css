@@ -22,3 +22,10 @@
 - [Layouts](./layouts/grid.md)
 
   - [Grid](./layouts/grid.md)
+  - [Flex](./comingsoon.md)
+  - [Positions](./comingsoon.md)
+  - [Display Table](./comingsoon.md)
+
+- [CSS Functions](./comingsoon.md)
+- [CSS Variables](./comingsoon.md)
+- [Transitions](./comingsoon.md)
