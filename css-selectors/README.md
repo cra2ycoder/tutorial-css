@@ -12,7 +12,3 @@
   - [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements#Pseudo-elements)
   - [Combinators and selector lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
   - [Groups of selectors on one rule](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors#Groups_of_selectors_on_one_rule)
-
-**try running all the html files for the best preview**
-
-- files contains DOM's, CSS's and the Preview
