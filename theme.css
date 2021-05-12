@@ -44,3 +44,11 @@ body {
 .sidebar ul li a {
   color: #d6e0ea;
 }
+
+.sidebar-toggle {
+  background: #f66 !important;
+}
+
+.sidebar-toggle span {
+  background-color: white;
+}
