@@ -33,7 +33,3 @@
       <path fill="white" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
   </svg>
 </a>
-
-<!-- background color -->
-
-![color](#000000)
