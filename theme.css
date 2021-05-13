@@ -17,7 +17,7 @@ body {
 }
 
 .markdown-section hr {
-  border-bottom: 1px solid #2b2b2b;
+  border-bottom: 1px dashed #525252;
 }
 
 .markdown-section pre,
@@ -51,4 +51,8 @@ body {
 
 .sidebar-toggle span {
   background-color: white;
+}
+
+.sidebar {
+  background-color: #0c1019;
 }

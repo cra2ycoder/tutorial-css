@@ -36,7 +36,18 @@
   <head>
     <meta charset="utf-8" />
     <title>My CSS experiment</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- EXTERNAL ACCESS: from root -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- EXTERNAL ACCESS: from sub folders -->
+    <link rel="stylesheet" href="./relative-folder/src/style.css" />
+
+    <!-- EXTERNAL ACCESS: from domain url (3rd party/our domain) -->
+    <link
+      rel="stylesheet"
+      href="https://yourdomain.com/common/styles/style.css"
+    />
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -46,6 +57,8 @@
 ```
 
 ```css
+/* file: style.css */
+
 h1 {
   color: blue;
   background-color: yellow;
@@ -67,20 +80,24 @@ p {
   <head>
     <meta charset="utf-8" />
     <title>My CSS experiment</title>
+
+    <!-- INTERNAL ACCESS -->
     <style>
       h1 {
         color: blue;
         background-color: yellow;
         border: 1px solid black;
       }
-
-      p {
-        color: red;
-      }
     </style>
   </head>
   <body>
     <h1>Hello World!</h1>
+    <!-- INTERNAL ACCESS -->
+    <style>
+      p {
+        color: red;
+      }
+    </style>
     <p>This is my first CSS example</p>
   </body>
 </html>
@@ -98,6 +115,7 @@ p {
     <title>My CSS experiment</title>
   </head>
   <body>
+    <!-- INLINE ACCESS -->
     <h1 style="color: blue;background-color: yellow;border: 1px solid black;">
       Hello World!
     </h1>
@@ -144,26 +162,6 @@ body {
 
 <img src="https://mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png">
 
-```css
-h1 {
-  background-color: red;
-}
-```
+<hr />
 
 <img src="https://mdn.mozillademos.org/files/3667/css%20syntax%20-%20declarations%20block.png">
-
-```css
-h1 {
-  color: blue;
-  background-color: yellow;
-}
-
-p {
-  color: red;
-}
-
-p,
-li {
-  text-decoration: underline;
-}
-```
