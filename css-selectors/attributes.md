@@ -2,6 +2,8 @@
 
 ## Presence and value attribute selectors
 
+<div id="css-attributes"></div>
+
 - **[attr]:** select all elements with the attribute **attr**, whatever its value.
 - **[attr=val]:** select all elements with the attribute **attr**, but only if its value is **val**.
 - **[attr~=val]:** select all elements with the attribute **attr**, but only if val is one of a space-separated list of words contained in attr's value.
