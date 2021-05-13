@@ -1,0 +1,15 @@
+:root {
+  --body-bg-color: #15212d;
+  --sidebar-bg-color: #0c1019;
+  --primary-font-color: #d6e0ea;
+  --primary-heading-color: #05ad32;
+  --highlight-font-color: #ff982c;
+  --divider-bg-color: #525252;
+
+  --code-panel-bg-color: #0c1019;
+  --code-panel-border-color: #232323;
+  --code-content-color: #77777d;
+
+  --sidebar-label-color: #d6e0ea;
+  --sidebar-toggle-bg-color: #f66;
+}

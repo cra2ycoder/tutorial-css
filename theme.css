@@ -1,11 +1,11 @@
 .sidebar,
 body {
-  color: #d6e0ea;
-  background-color: #15212d;
+  color: var(--primary-font-color);
+  background-color: var(--body-bg-color);
 }
 
 .anchor span {
-  color: #05ad32;
+  color: var(--primary-heading-color);
   font-weight: 400;
   font-size: 2rem;
 }
@@ -15,11 +15,11 @@ body {
 .markdown-section h3,
 .markdown-section h4,
 .markdown-section strong {
-  color: #ff982c;
+  color: var(--highlight-font-color);
 }
 
 .markdown-section hr {
-  border-bottom: 1px dashed #525252;
+  border-bottom: 1px dashed var(--divider-bg-color);
 }
 
 .markdown-section pre,
@@ -29,8 +29,8 @@ body {
 
 .markdown-section code,
 .markdown-section pre {
-  background-color: #0c1019;
-  border: 1px solid #232323;
+  background-color: var(--code-panel-bg-color);
+  border: 1px solid var(--code-panel-border-color);
 }
 
 .markdown-section > img {
@@ -40,15 +40,15 @@ body {
 }
 
 .markdown-section pre > code {
-  color: #77777d;
+  color: var(--code-content-color);
 }
 
 .sidebar ul li a {
-  color: #d6e0ea;
+  color: var(--sidebar-label-color);
 }
 
 .sidebar-toggle {
-  background: #f66 !important;
+  background: var(--sidebar-toggle-bg-color) !important;
 }
 
 .sidebar-toggle span {
@@ -56,5 +56,5 @@ body {
 }
 
 .sidebar {
-  background-color: #0c1019;
+  background-color: var(--sidebar-bg-color);
 }
