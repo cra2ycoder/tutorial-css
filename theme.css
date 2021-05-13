@@ -4,6 +4,10 @@ body {
   background-color: var(--body-bg-color);
 }
 
+section.cover {
+  background: var(--coverpage-bg-color) !important;
+}
+
 .anchor span {
   color: var(--primary-heading-color);
   font-weight: 400;
@@ -48,7 +52,7 @@ body {
 }
 
 .sidebar-toggle {
-  background: var(--sidebar-toggle-bg-color) !important;
+  background: var(--coverpage-bg-color) !important;
 }
 
 .sidebar-toggle span {
