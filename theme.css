@@ -6,6 +6,8 @@ body {
 
 .anchor span {
   color: #05ad32;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 .markdown-section h1,

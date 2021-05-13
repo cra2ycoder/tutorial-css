@@ -1,17 +1,17 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](/)
+- [Introduction](/)
 
 - [CSS Selectors](./css-selectors/README.md)
 
-  - [attributes](./css-selectors/attributes.md)
-  - [classes](./css-selectors/classes.md)
-  - [combinators](./css-selectors/combinators.md)
-  - [elements](./css-selectors/elements.md)
-  - [id](./css-selectors/id.md)
-  - [pseudo-classes](./css-selectors/pseudo-classes.md)
-  - [pseudo-elements](./css-selectors/pseudo-elements.md)
-  - [universal](./css-selectors/universal.md)
+  - [Attributes](./css-selectors/attributes.md)
+  - [Classes](./css-selectors/classes.md)
+  - [Combinators](./css-selectors/combinators.md)
+  - [Elements](./css-selectors/elements.md)
+  - [ID](./css-selectors/id.md)
+  - [Pseudo Classes](./css-selectors/pseudo-classes.md)
+  - [Pseudo Elements](./css-selectors/pseudo-elements.md)
+  - [Universal](./css-selectors/universal.md)
 
 - [Theme Styles](./styles/shapes.md)
 
@@ -28,4 +28,5 @@
 
 - [CSS Functions](./comingsoon.md)
 - [CSS Variables](./comingsoon.md)
+- [CSS Units](./comingsoon.md)
 - [Transitions](./comingsoon.md)

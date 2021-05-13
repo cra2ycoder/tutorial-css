@@ -4,7 +4,10 @@
     </svg>
 </div>
 
-<h1>CSS Tutorials</h1>
+<h1>Cascading Style Sheets</h1>
+<p>...work in progress...</p>
+<h3>A tutorial site for frontend developers</h3>
+
 <p>@ cra2ycoder</p>
 
 <div class="panel">
