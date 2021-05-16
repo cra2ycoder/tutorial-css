@@ -26,6 +26,7 @@
   - [Positions](./comingsoon.md)
   - [Display Table](./comingsoon.md)
 
+- [Spaces](./comingsoon.md)
 - [CSS Functions](./comingsoon.md)
 - [CSS Variables](./comingsoon.md)
 - [CSS Units](./comingsoon.md)

@@ -6,6 +6,14 @@
 - **[attr=val]:** select all elements with the attribute **attr**, but only if its value is **val**.
 - **[attr~=val]:** select all elements with the attribute **attr**, but only if val is one of a space-separated list of words contained in attr's value.
 
+<iframe 
+    src="https://codesandbox.io/embed/css-tour-z0o3v?view=preview&hidedevtools=1"
+    style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    >
+</iframe>
+
 ```html
 <ul class="presence-value-attr">
   <li car></li>

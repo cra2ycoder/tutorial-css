@@ -1,4 +1,4 @@
-# Combinators and selector lists
+# Combinators
 
 - CSS selectors become even more useful when you start combining them to perform fine-grained selections
 - CSS has several ways to select elements

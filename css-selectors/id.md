@@ -1,4 +1,4 @@
-## ID selectors
+# ID Selectors
 
 - The ID selector consists of a hash/pound symbol `#`
 - Any element can have a unique ID name set with the id attribute

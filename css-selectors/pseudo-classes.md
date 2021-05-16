@@ -1,4 +1,4 @@
-# pseudo-classes
+# Pseudo Classes
 
 - A CSS pseudo-class is a keyword added to the **end of a selector**
 - preceded by a colon **:**

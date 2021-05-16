@@ -1,4 +1,4 @@
-## Universal Selectors
+# Universal Selectors
 
 - The universal selector `*` is the ultimate joker.
 - It allows selecting all elements on a page

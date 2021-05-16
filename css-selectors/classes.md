@@ -1,4 +1,4 @@
-## Class selectors
+# Classes
 
 - The class selector consists of a dot `.`
 - A class name is **any value**, **without spaces**

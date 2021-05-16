@@ -1,4 +1,4 @@
-## Type selectors aka element selectors
+# Elements Selectors
 
 - This selector is just a case-insensitive match between the selector name and a given HTML element name
 - This is the simplest way to target all elements of a given type
