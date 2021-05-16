@@ -11,7 +11,11 @@ section.cover {
 .anchor span {
   color: var(--primary-heading-color);
   font-weight: 400;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+}
+
+h1 {
+  font-size: 3rem !important;
 }
 
 .markdown-section h1,
@@ -60,5 +64,14 @@ section.cover {
 }
 
 .sidebar {
+  background-color: var(--sidebar-bg-color);
+}
+
+.search, .search .matching-post {
+  border-color: var(--divider-bg-color) !important;
+}
+
+.search input {
+  color: var(--primary-font-color);
   background-color: var(--sidebar-bg-color);
 }

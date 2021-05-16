@@ -1,6 +1,6 @@
 # Attributes
 
-## Presence and value attribute selectors
+### Presence and value attribute selectors
 
 <div id="css-attributes"></div>
 
@@ -40,7 +40,7 @@ are given a red text color */
 
 ---
 
-## Substring value attribute selectors
+### Substring value attribute selectors
 
 - also known as `RegExp-like selectors`
 - flexible matching in a similar fashion to regular expression (these are not true regular expression)
@@ -56,9 +56,7 @@ are given a red text color */
   <li data-type="carrot 3kg">Carrot</li>
   <li data-type="vegetable beans 2kg">Beans</li>
   <li data-type="corn 1kg">Corn</li>
-  <li data-type="vegetable red chilly">
-    Red Chilly
-  </li>
+  <li data-type="vegetable red chilly">Red Chilly</li>
   <li data-type="vegetable-cucumber">Cucumber</li>
   <li data-type="vegetable-garlic">Garlic</li>
 </ul>
