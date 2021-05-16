@@ -4,7 +4,7 @@
 - preceded by a colon **:**
 - Used to do some style on some **certain state** such as `active, hover, checked` etc.,
 
-**state specific**
+### state specific
 
 ```html
 <a class="google-link" href="https://www.google.com">www.google.com</a>
@@ -22,7 +22,7 @@
 }
 ```
 
-**first-child and last-child**
+### first-child and last-child
 
 ```html
 <ul class="num-list">
@@ -42,7 +42,7 @@
 }
 ```
 
-**nth-child**
+### nth-child
 
 ```html
 <ul class="num-nth-list">
@@ -63,7 +63,7 @@
 }
 ```
 
-**nth-last-child**
+### nth-last-child
 
 ```html
 <ul class="nth-list">
@@ -86,7 +86,7 @@
 }
 ```
 
-**not**
+### not
 
 ```html
 <ul class="not-list">

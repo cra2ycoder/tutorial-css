@@ -3,7 +3,6 @@
 - The universal selector `*` is the ultimate joker.
 - It allows selecting all elements on a page
 - It is rarely used to apply a style to every element on a page
--
 
 ```html
 <div class="universal-selectors">

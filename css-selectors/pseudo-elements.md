@@ -4,7 +4,7 @@
 - preceded by two colons (::)
 - can be added to the end of selectors
 
-**some popular pseudo elements**
+### some popular pseudo elements
 
 ```
 ::after
@@ -16,7 +16,7 @@
 
 ## Example
 
-**::before**
+### ::before
 
 ```html
 <p class="pseudo-elements-before">pseudo elements</p>
@@ -30,7 +30,7 @@
 }
 ```
 
-**::after**
+### ::after
 
 ```html
 <p class="pseudo-elements-after">pseudo elements</p>
@@ -44,7 +44,7 @@
 }
 ```
 
-**::first-letter**
+### ::first-letter
 
 ```html
 <p class="pseudo-first-letter">first letter</p>
@@ -59,7 +59,7 @@
 }
 ```
 
-**::first-line**
+### ::first-line
 
 ```html
 <p class="pseudo-first-line">
@@ -75,12 +75,10 @@
 }
 ```
 
-**::selection**
+### ::selection
 
 ```html
-<p class="pseudo-selection">
-  Try selecting the text by using mouse.
-</p>
+<p class="pseudo-selection">Try selecting the text by using mouse.</p>
 ```
 
 ```css
